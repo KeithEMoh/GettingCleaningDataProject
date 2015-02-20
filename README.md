@@ -54,7 +54,7 @@ that cross references activity codes with descriptions and then creating a vecto
 that has an activity description for each activity code in the summary table.  Add 
 this vector as a column to the summary table.  Physically insert this column next to the 
 column containing the activity codes to make it easier to view.
-8. Write the summary table to disk as a text file called "summaryTabble.txt".
+8. Write the summary table to disk as a text file called "summaryTable.txt".
 
 ## The Tidy Data Set
 
