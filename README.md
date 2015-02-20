@@ -61,8 +61,11 @@ column containing the activity codes to make it easier to view.
 The format of the tidy data set is as follows:
 
 COLUMN 1: Subject Id (values are 1 - 30)     
-COLUMN 2: Activity Id (values are 1 - 6)
-COLUMN 3: Activity Description
+
+COLUMN 2: Activity Id (values are 1 - 6)    
+
+COLUMN 3: Activity Description    
+
 COLUMNS 4-69: The average of each mean and standard deviation variable for each subject id and activity id pair
 
 Each row of the tidy data set consists of data pertaining to a subject / activity pair.
