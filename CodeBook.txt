@@ -21,13 +21,13 @@ RAW DATA VARIBLE NAME         TIDY DATA VARIABLE NAME   TIDY DATA DESCRIPTION
 subject_test/train.txt col 1  subjectId                 Values 1 - 30: identifies each subject
 y_test/train.txt col 1        activityCode              Values 1 - 6: identifies each activity
 activity_labels.txt col 2     activityDescrip           English description of each activity 1 - 6
-tBodyAcc-mean()-X             tBodyAccMeanX             All remaining variables are means of the
-tBodyAcc-mean()-Y             tBodyAccMeanY             groups of named observations which were
-BodyAcc-mean()-Z              tBodyAccMeanZ             grouped by subject and by activity.
-tBodyAcc-std()-X              tBodyAccStdX                 
-tBodyAcc-std()-Y              tBodyAccStdY
-tBodyAcc-std()-Z              tBodyAccStdZ
-tGravityAcc-mean()-X          tGravityAccMeanX
+tBodyAcc-mean()-X             tBodyAccMeanX             All remaining variables (those whose names
+tBodyAcc-mean()-Y             tBodyAccMeanY             begin with a "t" or "f") are means of the
+BodyAcc-mean()-Z              tBodyAccMeanZ             groups of named observations which were
+tBodyAcc-std()-X              tBodyAccStdX              grouped by subject and by activity.
+tBodyAcc-std()-Y              tBodyAccStdY              All Samsung data was provided as
+tBodyAcc-std()-Z              tBodyAccStdZ              standardized between -1 and 1.  Therefore
+tGravityAcc-mean()-X          tGravityAccMeanX          the data do not have units.
 tGravityAcc-mean()-Y          tGravityAccMeanY
 tGravityAcc-mean()-Z          tGravityAccMeanZ
 tGravityAcc-std()-X           tGravityAccStdX
