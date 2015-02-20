@@ -1,0 +1,102 @@
+RAW DATA FILES USED       DATA DIMENSIONS
+-------------------       ---------------
+X_test.txt                2947 rows, 561 cols.
+X_train.txt               7352 rows, 561 cols.
+features.txt              561  rows,   2 cols.
+y_test.txt                2947 rows,   1 col.
+y_train.txt               7352 rows,   1 col.
+subject_test.txt          2947 rows,   1 col.
+subject_train.txt         7352 rows,   1 col.
+activity_labels.txt       6 rows,      2 cols.
+
+
+RAW DATA FILES NOT USED
+-----------------------
+Files in the "Inertial Signals" folder
+
+
+RAW AND TIDY DATA INFORMATION
+RAW DATA VARIBLE NAME         TIDY DATA VARIABLE NAME   TIDY DATA DESCRIPTION
+---------------------         -----------------------   ---------------------
+subject_test/train.txt col 1  subjectId                 Values 1 - 30: identifies each subject
+y_test/train.txt col 1        activityCode              Values 1 - 6: identifies each activity
+activity_labels.txt col 2     activityDescrip           English description of each activity 1 - 6
+tBodyAcc-mean()-X             tBodyAccMeanX             All remaining variables are means of the
+tBodyAcc-mean()-Y             tBodyAccMeanY             groups of named observations which were
+BodyAcc-mean()-Z              tBodyAccMeanZ             grouped by subject and by activity.
+tBodyAcc-std()-X              tBodyAccStdX                 
+tBodyAcc-std()-Y              tBodyAccStdY
+tBodyAcc-std()-Z              tBodyAccStdZ
+tGravityAcc-mean()-X          tGravityAccMeanX
+tGravityAcc-mean()-Y          tGravityAccMeanY
+tGravityAcc-mean()-Z          tGravityAccMeanZ
+tGravityAcc-std()-X           tGravityAccStdX
+tGravityAcc-std()-Y           tGravityAccStdY
+tGravityAcc-std()-Z           tGravityAccStdZ
+tBodyAccJerk-mean()-X         tBodyAccJerkMeanX
+tBodyAccJerk-mean()-Y         tBodyAccJerkMeanY
+tBodyAccJerk-mean()-Z         tBodyAccJerkMeanZ
+tBodyAccJerk-std()-X          tBodyAccJerkStdX
+tBodyAccJerk-std()-Y          tBodyAccJerkStdY
+tBodyAccJerk-std()-Z          tBodyAccJerkStdZ
+tBodyGyro-mean()-X            tBodyGyroMeanX
+tBodyGyro-mean()-Y            tBodyGyroMeanY
+tBodyGyro-mean()-Z            tBodyGyroMeanZ
+tBodyGyro-std()-X             tBodyGyroStdX
+tBodyGyro-std()-Y             tBodyGyroStdY
+tBodyGyro-std()-Z             tBodyGyroStdZ
+tBodyGyroJerk-mean()-X        tBodyGyroJerkMeanX
+tBodyGyroJerk-mean()-Y        tBodyGyroJerkMeanY
+tBodyGyroJerk-mean()-Z        tBodyGyroJerkMeanZ
+tBodyGyroJerk-std()-X         tBodyGyroJerkStdX
+tBodyGyroJerk-std()-Y         tBodyGyroJerkStdY
+tBodyGyroJerk-std()-Z         tBodyGyroJerkStdZ
+tBodyAccMag-mean()            tBodyAccMagMean
+tBodyAccMag-std()             tBodyAccMagStd
+tGravityAccMag-mean()         tGravityAccMagMean
+tGravityAccMag-std()          tGravityAccMagStd            
+tBodyAccJerkMag-mean()        tBodyAccJerkMagMean          
+tBodyAccJerkMag-std()         tBodyAccJerkMagStd           
+tBodyGyroMag-mean()           tBodyGyroMagMean             
+tBodyGyroMag-std()            tBodyGyroMagStd              
+tBodyGyroJerkMag-mean()       tBodyGyroJerkMagMean         
+tBodyGyroJerkMag-std()        tBodyGyroJerkMagStd          
+fBodyAcc-mean()-X             fBodyAccMeanX                
+fBodyAcc-mean()-Y             fBodyAccMeanY                
+fBodyAcc-mean()-Z             fBodyAccMeanZ                
+fBodyAcc-std()-X              fBodyAccStdX                 
+fBodyAcc-std()-Y              fBodyAccStdY                 
+fBodyAcc-std()-Z              fBodyAccStdZ                 
+fBodyAccJerk-mean()-X         fBodyAccJerkMeanX
+fBodyAccJerk-mean()-Y         fBodyAccJerkMeanY
+fBodyAccJerk-mean()-Z         fBodyAccJerkMeanZ
+fBodyAccJerk-std()-X          fBodyAccJerkStdX
+fBodyAccJerk-std()-Y          fBodyAccJerkStdY
+fBodyAccJerk-std()-Z          fBodyAccJerkStdZ
+fBodyGyro-mean()-X            fBodyGyroMeanX
+fBodyGyro-mean()-Y            fBodyGyroMeanY
+fBodyGyro-mean()-Z            fBodyGyroMeanZ
+fBodyGyro-std()-X             fBodyGyroStdX
+fBodyGyro-std()-Y             fBodyGyroStdY
+fBodyGyro-std()-Z             fBodyGyroStdZ
+fBodyAccMag-mean()            fBodyAccMagMean
+fBodyAccMag-std()             fBodyAccMagStd
+fBodyBodyAccJerkMag-mean()    fBodyAccJerkMagMean       
+fBodyBodyAccJerkMag-std()     fBodyAccJerkMagStd
+fBodyBodyGyroMag-mean()       fBodyGyroMagMean
+fBodyBodyGyroMag-std()        fBodyGyroMagStd
+fBodyBodyGyroJerkMag-mean()   fBodyGyroJerkMagMean
+fBodyBodyGyroJerkMag-std()    fBodyGyroJerkMagStd
+
+
+TIDY DATA FORMAT
+COLUMN 1       COLUMN 2        COLUMN 3       COLUMNS 4-69
+--------       --------        --------       ------------
+Subject Id     Activity Id     Activity       The average of each mean and standard deviation
+(values 1-30)  (values 1-6)    Description    variable for each subject id and activity id pair
+
+There are 30 subjects and each subject participated in all 6 activities,
+thereby resulting in 30 x 6 or 180 rows of data.
+In addition, the first row is the file header and consists of the column names.
+Consequently there are a total of 181 rows and 69 columns.
+The tidy data set can be viewed in the file named "summaryTable.txt" 
