@@ -60,14 +60,15 @@ column containing the activity codes to make it easier to view.
 
 The format of the tidy data set is as follows:
 
-COLUMN 1       COLUMN 2        COLUMN 3       COLUMNS 4-69
---------       --------        --------       ------------
-Subject Id     Activity Id     Activity       The average of each mean and standard deviation
-(values 1-30)  (values 1-6)    Description    variable for each subject id and activity id pair
+COLUMN 1: Subject Id (values are 1 - 30)     
+COLUMN 2: Activity Id (values are 1 - 6)
+COLUMN 3: Activity Description
+COLUMNS 4-69: The average of each mean and standard deviation variable for each subject id and activity id pair
 
 Each row of the tidy data set consists of data pertaining to a subject / activity pair.
 There are 30 subjects and each subject participated in all 6 activities,
 thereby resulting in 30 x 6 or 180 rows of data.
 The data set is tidy because:
-1. There is one observation per row where "observation" is all the means and standard deviations pertining to a subject id / activity id pair
+
+1. There is one observation per row where "observation" is all the means and standard deviations pertaining to a subject id / activity id pair
 2. Each variable of the observation has its own column and there are no duplicate columns.
